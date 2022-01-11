@@ -18,7 +18,8 @@ from django.urls import path
 from quote_generator import views
 
 urlpatterns = [
-    path('', views.index, name ='index'),
+    path('admin/', admin.site.urls),
+    path('', views.home, name ='home'),
     path('about/', views.about, name='about'),
     
 ]
