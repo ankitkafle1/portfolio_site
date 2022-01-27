@@ -1,0 +1,47 @@
+
+#portfolioBody {
+    width: 90%;
+    margin: auto;
+}
+.mt-5 {
+    font-size: 35px;
+}
+ p{
+     font-size: larger;
+ }
+
+.img-fluid {
+    width: 400px;
+    height: 350px;
+}
+
+#portfolioContainer {
+    margin-top: 20px;
+}
+#proffileImage {
+    border-radius: 10px;
+    width: auto;
+}
+
+.marin {
+    margin: 10%;
+}
+
+#blogPimg {
+    border-radius: 10px;
+}
+
+#blogDetails {
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+}
+
+#detailImage {
+    width: 80%;
+    border-radius: 5px;
+}
+
+#portfolioBody {
+    background-color: azure;
+}

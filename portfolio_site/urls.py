@@ -9,9 +9,9 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('quote/',views.home),
-    path('exchange/', erViews.home),
+    path('quote/',views.home, name = 'quotes'),
+    path('exchange/', erViews.home, name= 'exchagne'),
     path('', portfolioViews.home, name='home'),
-    path('blog/',include('blog.urls')),
+    path('blog/',include('blog.urls'))
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

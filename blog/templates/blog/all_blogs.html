@@ -1,17 +1,22 @@
+
 {% extends 'portfolio/base.html' %}
 
 {% block content %}
+<div class="marin" >
 
-<h1>Blogs</h1>
 
-<h2> I have writen {{ blogs.count }} blog{{ blogs.count|pluralize }} </h2>
 
+<h1 style="text-align:center;">Blogs</h1>
+<br>
+<br>
+<h2> World's  {{ blogs.count }} highest mountain peaks</h2>
 {% for blog in blogs %}
-
-    <a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
-    <h5>{{ blog.date|date:'M d Y' }}</h5>
-    <p>{{ blog.description|striptags|truncatechars:100 }}</p>
-    
+<br>
+<br>
+<img  style="width: 400px;" src="{{blog.image.url}}" id="blogPimg">
+<a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
+<h5>{{ blog.date|date:'M d Y' }}</h5>
+<p>{{ blog.description|striptags |truncatechars:200}}</p>
 {% endfor %}
-
+</div>
 {% endblock %}
